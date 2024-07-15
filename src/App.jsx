@@ -7,6 +7,7 @@ import {
 import HomePage from "./routes/homePage/homePage";
 import SinglePage from "./routes/singlePage/singlePage";
 import Login from "./routes/login/login";
+import ProfilePage from "./routes/profilePage/profilePage";
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
         {
           path:"/:id",
           element: <SinglePage/>
+        },
+        {
+          path:"/profile",
+          element: <ProfilePage/>
         }
       ]
     }
